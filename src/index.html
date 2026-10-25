@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html lang = "es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+  <!-- do not remove this line! -->
+  <title>Mi rincón de lectura</title>
+  <include src="./views/header.html"></include>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="container__title"><i class="fa-solid fa-book"></i>¡Bienvenido a mi rincón de lectura!</h2>
+    <p>
+      ¡Hola y bienvenido a mi rincón de lectura! Si estás buscando tu próxima historia favorita, has llegado al lugar
+      adecuado. Aquí no encontrarás críticas académicas ni spoilers, solo recomendaciones sinceras de libros que me han
+      marcado, organizadas para que descubras exactamente la lectura que necesitas hoy. Ponte cómodo, echa un vistazo y
+      déjate llevar por la magia de las buenas historias.
+    </p>
+  </div>
+  <div class="container"> 
+      <h2 class="container__title"><i class="fa-regular fa-calendar"></i>La lectura del mes</h2>
+      <picture data-aos="fade-up-right">
+        <source media="(min-width: 993px)" sizes="300px"
+          srcset="./assets/images/la-primera-mano.jpg?as=webp&width=300 300w" type="image/webp">
+        <source media="(min-width: 601px)" sizes="200px"
+          srcset="./assets/images/la-primera-mano.jpg?as=webp&width=200 200w" type="image/webp" />
+        <source media="(max-width: 600px)" sizes="100px"
+          srcset="./assets/images/la-primera-mano.jpg?as=webp&width=100 100w" type="image/webp" />
+        <img src="./assets/images/la-primera-mano.jpg" alt="Portada: La primera mano que sostuvo la mía" class="book__cover">
+      </picture>
+      <h3 class="book__title">La primera mano que sostuvo la mía</h3>
+      <h3>Maggie O'Farrell</h3>
+      <p class="book__review">Esta conmovedora historia trata sobre sobre el amor, la maternidad, el arte y los hilos
+        invisibles que conectan nuestras vidas a través del tiempo. La novela entrelaza dos historias ambientadas en
+        Londres en dos épocas. Ambas líneas temporales forman un rompecabezas en el que se explora la maternidad desde
+        una perspectiva honesta y nada idealizada.</p>
+    <div class="book__key-data">
+      <table>
+          <thead>
+            <tr>
+              <th colspan="2">Datos del libro</th>
+              </tr>
+          </thead>
+          <tbody>
+        <tr>
+            <td>Título</td>
+            <td><i>La primera mano que sostuvo la mía</i></td>
+        </tr>
+        <tr>
+          <td>Autor</td>
+          <td>Maggie O'Farrell</td>
+        </tr>
+        <tr>
+          <td>Año de publicación</td>
+          <td>2018</td>
+        </tr>
+        <tr>
+          <td>Número de páginas</td>
+          <td>380 páginas</td>
+        </tr>
+        <tr>
+          <td>ISBN-10</td>
+          <td>8417007377</td>
+        </tr>
+        <tr>
+          <td>Página oficial del libro</td>
+          <td> <a href="https://librosdelasteroide.com/libro/la-primera-mano-que-sostuvo-la-mia" target="_blank">Link</a></td>
+        </tr>
+        </tbody>
+      </table>
+      <button type="button">Leer reseña completa</button>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="container__title"><i class="fa-solid fa-list-ol"></i>Próximas lecturas</h2>
+    <p>Aquí puedes ver una selección de los títulos que próximamente encontrarán un hueco en mi estantería</p>
+    <div class="container-cards">
+      <div class="container-cards__card">
+        <picture data-aos="fade-up-right">
+          <source media="(min-width: 993px)" sizes="200px"
+            srcset="./assets/images/una-belleza-terrible.jpg?as=webp&width=200 200w" type="image/webp">
+          <source media="(min-width: 601px)" sizes="150px"
+            srcset="./assets/images/una-belleza-terrible.jpg?as=webp&width=150 150w" type="image/webp" />
+          <source media="(max-width: 600px)" sizes="100px"
+            srcset="./assets/images/una-belleza-terrible.jpg?as=webp&width=100 100w" type="image/webp" />
+          <img src="./assets/images/una-belleza-terrible.jpg" alt="Portada: Una belleza terrible" class="book__cover">
+        </picture>
+        <p class="book__title">Una belleza terrible</p>
+      </div>
+      <div class="container-cards__card">
+        <picture data-aos="fade-up-right">
+          <source media="(min-width: 993px)" sizes="200px"
+            srcset="./assets/images/estupor-y-temblores.jpg?as=webp&width=200 200w" type="image/webp">
+          <source media="(min-width: 601px)" sizes="150px"
+            srcset="./assets/images/estupor-y-temblores.jpg?as=webp&width=150 150w" type="image/webp" />
+          <source media="(max-width: 600px)" sizes="100px"
+            srcset="./assets/images/estupor-y-temblores.jpg?as=webp&width=100 100w" type="image/webp" />
+          <img src="./assets/images/estupor-y-temblores.jpg" alt="Portada: Estupor y temblores" class="book__cover">
+        </picture>
+        <p class="book__title">Estupor y temblores</p>
+      </div>
+      <div class="container-cards__card">
+        <picture data-aos="fade-up-right">
+          <source media="(min-width: 993px)" sizes="200px" srcset="./assets/images/hamnet.jpg?as=webp&width=200 200w"
+            type="image/webp">
+          <source media="(min-width: 601px)" sizes="150px" srcset="./assets/images/hamnet.jpg?as=webp&width=150 150w"
+            type="image/webp" />
+          <source media="(max-width: 600px)" sizes="100px" srcset="./assets/images/hamnet.jpg?as=webp&width=100 100w"
+            type="image/webp" />
+          <img src="./assets/images/hamnet.jpg" alt="Portada: Hamnet" class="book__cover">
+        </picture>
+        <p class="book__title">Hamnet</p >
+      </div>
+    </div>
+  </div>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js" sync></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" sync></script>
+  <!-- do not remove this line! -->
+</body>
+
+</html>

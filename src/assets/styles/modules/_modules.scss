@@ -1,0 +1,91 @@
+@use "../variables";
+
+//Modules
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto auto 2rem auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: variables.$uoc-contrast;
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    @media (min-width: variables.$mqMinWidth) and (max-width: variables.$mqDesktopWidth) {
+        width: 70%;
+    }
+}
+
+
+.container__title {
+    font-family: variables.$font-family-serif;
+    //font-size: 24px;
+    //font-weight: 700;
+    color: variables.$uoc-corporate;
+}
+
+.book__cover {
+    border: solid 2px variables.$uoc-masterbrand;
+}
+
+.book__title {
+    font-style: italic;
+}
+
+.book__review {
+    text-align: justify;
+}
+
+.book__key-data {
+    display: inline-block;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: auto auto 2rem auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: variables.$uoc-contrast;
+
+
+    @media (min-width: variables.$mqMinWidth) and (max-width: variables.$mqDesktopWidth) {  //Ajuste para pantallas de móvil y tablet  
+        .container-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.container-cards__card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 250px;
+
+    picture {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    img {
+        width: 100%;
+        height: 302px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    p {
+        margin-top: 0;
+        text-align: center;
+    }
+}

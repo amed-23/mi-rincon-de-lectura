@@ -1,0 +1,77 @@
+@use "../variables";
+@use "sass:math";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: variables.$font-family-sans-serif;
+  line-height: variables.$line-height-default;
+  background-color: variables.$uoc-bg;
+  color: variables.$uoc-corporate;
+}
+
+p {
+  font-size: variables.$font-size-default;
+}
+
+h1 {
+  font-size: variables.$font-size-default * 2.5;
+}
+
+h2 {
+  font-size: variables.$font-size-default * 2;
+}
+
+h3 {
+  font-size: variables.$font-size-default * 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: variables.$uoc-corporate;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    color: variables.$uoc-masterbrand;
+  }
+}
+
+table {
+  margin-bottom: 1rem;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  border-collapse: collapse;
+  border: 0.1rem solid variables.$uoc-masterbrand;
+}
+
+thead,
+th,
+td {
+  text-align: center;
+  border-bottom: 0.1rem dashed variables.$uoc-masterbrand;
+}
+
+button,
+input {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: variables.$uoc-corporate;
+  font-family: variables.$font-family-sans-serif;
+
+  &:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+} 
+}
