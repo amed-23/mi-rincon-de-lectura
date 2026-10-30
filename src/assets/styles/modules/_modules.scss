@@ -4,7 +4,7 @@
 
 .container {
     width: 80%;
-    max-width: 800px;
+    //max-width: 800px;
     margin: auto auto 2rem auto;
     padding: 2rem;
     border-radius: 2rem;
@@ -27,22 +27,38 @@
     color: variables.$uoc-corporate;
 }
 
+.book {
+
+}
+
 .book__cover {
     border: solid 2px variables.$uoc-masterbrand;
+    margin: 2rem;
+    @media (min-width: variables.$mqTabletWidth) {
+        border: solid 2px variables.$uoc-masterbrand;
+        float: left;
+    }
 }
 
-.book__title {
+.book__title, .book__author {
     font-style: italic;
+    @media (min-width: variables.$mqTabletWidth) {
+        text-align: justify;
+    }
 }
 
-.book__review {
+.book__description, .book__review {
     text-align: justify;
 }
 
 .book__key-data {
-    display: inline-block;
+    //display: inline-block;
+    align-self: auto;
     margin: 0;
     padding-top: 2rem;
+    @media (min-width: variables.$mqTabletWidth) {
+        text-align: left;
+    }
 }
 
 .container-cards {
@@ -66,7 +82,7 @@
     }
 }
 
-.container-cards__card {
+.card {
     display: flex;
     flex-direction: column;
     text-align: center;

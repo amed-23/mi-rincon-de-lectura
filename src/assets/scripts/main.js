@@ -21,3 +21,10 @@ import "../styles/main.scss";
 AOS.init({
  duration: 1200
 });
+
+const navigationToggle = document.querySelector(".navigation__toggle");
+const navigationItems = document.querySelector(".navigation__items");
+
+navigationToggle.addEventListener("click", () => {
+  navigationItems.classList.toggle("active");
+});
