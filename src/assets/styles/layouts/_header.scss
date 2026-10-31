@@ -1,69 +1,51 @@
 @use "../variables";
 
-.navigation__title {
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: variables.$uoc-contrast-bg;
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  width: 100%;
+
+  .navigation__title {
     margin: 0;
-}
+  }
 
-nav {
+  .navigation__toggle {
+    display: none;
+    cursor: pointer;
+    margin-top: 1rem;
+
+    @media (max-width: variables.$mqTabletWidth) {
+      display: block;
+    }
+  }
+
+  .navigation__items {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: variables.$uoc-contrast-bg;
-    position: relative;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    width: 100%;
+    list-style: none;
+    margin: 0.5rem;
+    padding: 0;
+    gap: 1.5rem;
 
-    .navigation__toggle {
-        display: none;
-        cursor: pointer;
-        margin-top: 1rem;
-
-        @media (max-width: variables.$mqTabletWidth) {
-            display: block;
-        }
+    @media (max-width: variables.$mqTabletWidth) {
+      display: none;
+      flex-direction: column;
+      background-color: variables.$uoc-contrast-bg;
+      position: absolute;
+      margin: 0;
+      top: 100%;
+      left: 0;
+      padding-bottom: 1rem;
+      width: 100%;
     }
 
-    .navigation__items {
-        display: flex;
-        list-style: none;
-        margin: 0.5rem;
-        padding: 0;
-        gap: 1.5rem;
-
-        @media (max-width: variables.$mqTabletWidth) {
-            display: none;
-            flex-direction: column;
-            background-color: variables.$uoc-contrast-bg;
-            position: absolute;
-            margin: 0;
-            top: 100%;
-            left: 0;
-            padding-bottom: 1rem;
-            width: 100%;
-        }
-
-        &.active {
-            display: flex;
-        }
+    &.active {
+      display: flex;
     }
-
-
-    li {
-        a {
-            text-decoration: none;
-            color: variables.$uoc-corporate;
-            font-weight: 500;
-
-            @media (max-width: variables.$mqTabletWidth) {
-                padding-left: 1rem;
-            }
-        }
-
-        a:hover {
-            cursor: pointer;
-            color: variables.$uoc-masterbrand;
-        }
-    }
+  }
 }

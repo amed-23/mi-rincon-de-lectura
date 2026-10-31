@@ -1,0 +1,13 @@
+@use "sass:math";
+
+@function double($number) {
+  @return $number + $number;
+}
+
+@function tripple($number) {
+  @return $number * 3;
+}
+
+@function px2rem($px) {
+  @return math.div($px, 16) + rem;
+}
