@@ -68,12 +68,12 @@ input {
   padding: 0.2rem;
   border-radius: functions.px2rem(10);
   cursor: pointer;
-  box-shadow: 0 functions.px2rem(4) functions.px2rem(8) rgba(0, 0, 0, 0.3);
+  box-shadow: 0 functions.px2rem(4) functions.px2rem(8) variables.$uoc-contrast;
   background-color: variables.$uoc-corporate;
   font-family: variables.$font-family-sans-serif;
 
   &:hover {
-    box-shadow: 0 functions.px2rem(6) functions.px2rem(12) rgba(0, 0, 0, 0.5);
+    box-shadow: 0 functions.px2rem(6) functions.px2rem(12) variables.$uoc-contrast;
   }
 }
 

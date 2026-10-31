@@ -12,8 +12,8 @@
   text-align: center;
   background-color: variables.$uoc-contrast;
   box-shadow:
-    0 functions.px2rem(4) functions.px2rem(6) functions.px2rem(-1) rgba(0, 0, 0, 0.1),
-    0 functions.px2rem(2) functions.px2rem(4) functions.px2rem(-1) rgba(0, 0, 0, 0.06);
+    0 functions.px2rem(4) functions.px2rem(6) functions.px2rem(-1) variables.$uoc-masterbrand,
+    0 functions.px2rem(2) functions.px2rem(4) functions.px2rem(-1) variables.$uoc-masterbrand;
 
   @media (min-width: variables.$mqMinWidth) and (max-width: variables.$mqDesktopWidth) {
     width: 70%;

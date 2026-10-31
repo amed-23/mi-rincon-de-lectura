@@ -11,11 +11,11 @@ $font-size-default: 1rem;
 $line-height-default: $font-size-default * 1.5;
 
 //Colores
-$uoc-corporate: rgb(204 190 177);
-$uoc-masterbrand: rgb(255 211 172);
-$uoc-contrast: rgb(102 76 54);
+$uoc-corporate: rgb(234, 222, 215);
+$uoc-masterbrand: rgb(197, 184, 175);
+$uoc-contrast: rgb(102, 76, 54);
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-$uoc-contrast-bg: color.scale($uoc-contrast, $lightness: -40%);
+$uoc-contrast-bg: color.scale($uoc-contrast, $lightness: -20%);
 
 //Media queries & breakpoints
 $mqMinWidth: 420px;
