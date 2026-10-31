@@ -1,13 +1,13 @@
 @use "sass:math";
 
-@function double($number) {
+@function double($number) {  //Función para duplicar tamaño
   @return $number + $number;
 }
 
-@function tripple($number) {
+@function tripple($number) {  //Función para triplicar tamaño
   @return $number * 3;
 }
 
-@function px2rem($px) {
+@function px2rem($px) {  //Función para convertir pixels a rem
   @return math.div($px, 16) + rem;
 }

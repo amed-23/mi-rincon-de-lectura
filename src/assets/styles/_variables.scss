@@ -2,21 +2,22 @@
 @use "sass:math";
 
 
+//Fuentes
 $font-family-sans-serif: "Anaheim", "Arial", sans-serif;
 $font-family-serif: "Lobster Two", "Georgia", "Times New Roman", serif;
 
-
+//Tamaños
 $font-size-default: 1rem;
 $line-height-default: $font-size-default * 1.5;
 
-
+//Colores
 $uoc-corporate: rgb(204 190 177);
 $uoc-masterbrand: rgb(255 211 172);
 $uoc-contrast: rgb(102 76 54);
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 $uoc-contrast-bg: color.scale($uoc-contrast, $lightness: -40%);
 
-
+//Media queries & breakpoints
 $mqMinWidth: 420px;
 $mqTabletWidth: 601px;
 $mqDesktopWidth: 993px;

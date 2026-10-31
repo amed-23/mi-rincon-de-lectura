@@ -2,6 +2,8 @@
 @use "sass:math";
 @use "../functions";
 
+//Formato de elementos HTML
+
 * {
   box-sizing: border-box;
 }
@@ -49,9 +51,6 @@ a {
 
 table {
   margin-bottom: 1rem;
-  //align-items: center;
-  //align-self: center;
-  //justify-content: center;
   border-collapse: collapse;
   border: 0.1rem solid variables.$uoc-masterbrand;
 }
@@ -79,6 +78,7 @@ input {
 }
 
 li {
+  text-align: justify;
   a {
     text-decoration: none;
     color: variables.$uoc-corporate;
