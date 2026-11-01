@@ -35,7 +35,7 @@
     margin: 2rem;
     border: solid functions.px2rem(4) variables.$uoc-masterbrand;
 
-    @media (max-width: variables.$mqDesktopWidth) {
+    @media (max-width: variables.$mqTabletWidth) {
       float: left;
       border: solid functions.px2rem(2) variables.$uoc-masterbrand;
     }
