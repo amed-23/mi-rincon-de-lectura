@@ -20,7 +20,7 @@ require("typeface-lobster-two");
 import "../styles/main.scss";
 
 AOS.init({
- duration: 1200
+  duration: 1200
 });
 
 const navigationToggle = document.querySelector(".navigation__toggle");
