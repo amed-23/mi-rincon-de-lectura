@@ -4,14 +4,15 @@
 
 .navigation {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: variables.$uoc-contrast-bg;
-  position: relative;
+  width: 100%;
   margin-bottom: 2rem;
   padding: 1rem;
-  width: 100%;
+  background-color: variables.$uoc-contrast-bg;
+  
 
   .navigation__title {
     margin: 0;
@@ -20,8 +21,8 @@
 
   .navigation__toggle {  //Menú hamburguesa
     display: none;
-    cursor: pointer;
     margin-top: 1rem;
+    cursor: pointer;
 
     @media (max-width: variables.$mqTabletWidth) {
       display: block;
@@ -30,21 +31,21 @@
 
   .navigation__items {
     display: flex;
-    list-style: none;
     margin: 0.5rem;
     padding: 0;
+    list-style: none;
     gap: 1.5rem;
 
     @media (max-width: variables.$mqTabletWidth) {  //Menú hamburguesa
       display: none;
-      flex-direction: column;
-      background-color: variables.$uoc-contrast-bg;
       position: absolute;
-      margin: 0;
       top: 100%;
       left: 0;
-      padding-bottom: 1rem;
+      flex-direction: column;
       width: 100%;
+      margin: 0;
+      padding-bottom: 1rem;
+      background-color: variables.$uoc-contrast-bg;
     }
 
     &.active {

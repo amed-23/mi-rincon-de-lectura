@@ -11,14 +11,14 @@
 body {
   display: flex;
   flex-direction: column;
+  width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
-  width: 100%;
-  font-family: variables.$font-family-sans-serif;
-  line-height: variables.$line-height-default;
   background-color: variables.$uoc-bg;
   color: variables.$uoc-corporate;
+  font-family: variables.$font-family-sans-serif;
+  line-height: variables.$line-height-default;
 }
 
 p {
@@ -39,13 +39,13 @@ h3 {
 }
 
 a {
-  text-decoration: none;
   color: variables.$uoc-corporate;
   font-weight: 500;
+  text-decoration: none;
 
   &:hover {
-    cursor: pointer;
     color: variables.$uoc-masterbrand;
+    cursor: pointer;
   }
 }
 
@@ -58,8 +58,8 @@ table {
 thead,
 th,
 td {
-  text-align: center;
   border-bottom: 0.1rem dashed variables.$uoc-masterbrand;
+  text-align: center;
 }
 
 button,
@@ -67,10 +67,10 @@ input {
   margin: 0.2rem;
   padding: 0.2rem;
   border-radius: functions.px2rem(10);
-  cursor: pointer;
-  box-shadow: 0 functions.px2rem(4) functions.px2rem(8) variables.$uoc-contrast;
   background-color: variables.$uoc-corporate;
+  box-shadow: 0 functions.px2rem(4) functions.px2rem(8) variables.$uoc-contrast;
   font-family: variables.$font-family-sans-serif;
+  cursor: pointer;
 
   &:hover {
     box-shadow: 0 functions.px2rem(6) functions.px2rem(12) variables.$uoc-contrast;
@@ -80,9 +80,9 @@ input {
 li {
   text-align: justify;
   a {
-    text-decoration: none;
     color: variables.$uoc-corporate;
     font-weight: 500;
+    text-decoration: none;
 
     @media (max-width: variables.$mqTabletWidth) {
       padding-left: 1rem;
@@ -90,7 +90,7 @@ li {
   }
 
   a:hover {
-    cursor: pointer;
     color: variables.$uoc-masterbrand;
+    cursor: pointer;
   }
 }
